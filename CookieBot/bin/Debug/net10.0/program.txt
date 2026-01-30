@@ -1,0 +1,14 @@
+123456788
+ACTION step
+right 1
+END
+ACTION bananek
+pick
+pick
+pick
+END
+DO
+step
+step
+step
+bananek
