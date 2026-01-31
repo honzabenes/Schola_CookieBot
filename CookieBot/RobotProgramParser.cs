@@ -34,7 +34,7 @@
 
             string line;
 
-            while ((line = ReadLine()) == "ACTION")
+            while ((line = ReadLine()).Split()[0] == "ACTION")
             {
                 var commandSequence = new List<IAction>();
 
@@ -75,7 +75,7 @@
 
             string name;
 
-            while (((name = ReadLine()) == string.Empty))
+            while (((name = ReadLine()) is not null))
             {
                 bool isDefined = false;
 
@@ -108,7 +108,7 @@
             {
                 for (int i = 0; i < count; i++)
                 {
-                    commandSequence.Add(new Move());
+                    commandSequence.Add(new Move(direction));
                 }
             }
             else

@@ -1,6 +1,6 @@
 123456788
 ACTION step
-right 1
+right 9
 END
 ACTION bananek
 pick
@@ -8,7 +8,5 @@ pick
 pick
 END
 DO
-step
-step
 step
 bananek

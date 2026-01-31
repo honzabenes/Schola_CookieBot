@@ -9,6 +9,10 @@
     {
         public Direction Direction { get; init; }
 
+        public Move(Direction direction)
+        {
+            Direction = direction;
+        }
 
         public void Execute(Robot robot)
         {
@@ -21,12 +25,12 @@
 
             if (Direction == Direction.Left && robot.Position <= 0)
             {
-                throw new NotImplementedException();
+                throw new RobotOutOfBoundsApplicationException();
             }
 
-            if (Direction == Direction.Right && robot.Position >= robot.World.Tiles.Length)
+            if (Direction == Direction.Right && robot.Position >= robot.World.Tiles.Length - 1)
             {
-                throw new NotImplementedException();
+                throw new RobotOutOfBoundsApplicationException();
             }
 
             robot.Position += moveVector;
