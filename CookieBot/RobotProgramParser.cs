@@ -50,6 +50,9 @@
                         case "pick":
                             commandSequence.Add(new Pick());
                             break;
+                        case "drop":
+                            commandSequence.Add(new Drop());
+                            break;
                         case "left":
                             HandleCommandMove(Direction.Left, command, commandSequence);
                             break;

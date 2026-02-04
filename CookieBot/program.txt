@@ -1,12 +1,9 @@
-123456788
+0100101
 ACTION step
-right 9
-END
-ACTION bananek
+right 1
 pick
-pick
-pick
+right 3
+drop
 END
 DO
 step
-bananek

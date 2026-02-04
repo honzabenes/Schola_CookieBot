@@ -48,9 +48,9 @@
                 {
                     Console.Write(tile.CookiesCount);
                 }
-
+                Console.WriteLine();
                 Console.WriteLine(robot.Position);
-                Console.WriteLine(robot.CookiesPicked);
+                Console.WriteLine(robot.CookiesCount);
             }
         }
 

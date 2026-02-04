@@ -8,7 +8,7 @@
 
             if (currentTile.CookiesCount > 0)
             {
-                robot.CookiesPicked++;
+                robot.CookiesCount++;
                 currentTile.CookiesCount--;
             }
 
